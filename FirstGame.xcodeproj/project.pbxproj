@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9541C7B21F396DCD00A0DE37 /* PZImageRecognitionModelHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9541C7B11F396DCD00A0DE37 /* PZImageRecognitionModelHandler.swift */; };
+		9541C7B31F39753D00A0DE37 /* PZLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9541C7AF1F396D3C00A0DE37 /* PZLabel.swift */; };
+		9541C7B41F39753F00A0DE37 /* PZResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9541C7B01F396D3C00A0DE37 /* PZResource.swift */; };
+		957BF4101F397BEE00451CB4 /* PZViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957BF40F1F397BEE00451CB4 /* PZViewController.swift */; };
 		958BF4E51F3969AB00A6107B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958BF4E41F3969AB00A6107B /* AppDelegate.swift */; };
 		958BF4E71F3969AB00A6107B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958BF4E61F3969AB00A6107B /* ViewController.swift */; };
 		958BF4EA1F3969AB00A6107B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 958BF4E81F3969AB00A6107B /* Main.storyboard */; };
 		958BF4EC1F3969AB00A6107B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 958BF4EB1F3969AB00A6107B /* Assets.xcassets */; };
 		958BF4EF1F3969AB00A6107B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 958BF4ED1F3969AB00A6107B /* LaunchScreen.storyboard */; };
 		958BF4FA1F3969AB00A6107B /* FirstGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958BF4F91F3969AB00A6107B /* FirstGameTests.swift */; };
+		958BF50F1F396CA300A6107B /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 958BF50D1F396C7300A6107B /* SqueezeNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9541C7AF1F396D3C00A0DE37 /* PZLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PZLabel.swift; sourceTree = "<group>"; };
+		9541C7B01F396D3C00A0DE37 /* PZResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PZResource.swift; sourceTree = "<group>"; };
+		9541C7B11F396DCD00A0DE37 /* PZImageRecognitionModelHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PZImageRecognitionModelHandler.swift; sourceTree = "<group>"; };
+		957BF40F1F397BEE00451CB4 /* PZViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PZViewController.swift; sourceTree = "<group>"; };
 		958BF4E11F3969AB00A6107B /* FirstGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		958BF4E41F3969AB00A6107B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		958BF4E61F3969AB00A6107B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +45,7 @@
 		958BF4F51F3969AB00A6107B /* FirstGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		958BF4F91F3969AB00A6107B /* FirstGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstGameTests.swift; sourceTree = "<group>"; };
 		958BF4FB1F3969AB00A6107B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		958BF50D1F396C7300A6107B /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9541C7AE1F396D3C00A0DE37 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				9541C7AF1F396D3C00A0DE37 /* PZLabel.swift */,
+				9541C7B01F396D3C00A0DE37 /* PZResource.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		957BF40E1F397B9600451CB4 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				957BF40F1F397BEE00451CB4 /* PZViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		958BF4D81F3969AB00A6107B = {
 			isa = PBXGroup;
 			children = (
@@ -77,12 +104,15 @@
 		958BF4E31F3969AB00A6107B /* FirstGame */ = {
 			isa = PBXGroup;
 			children = (
+				957BF40E1F397B9600451CB4 /* UI */,
 				958BF4E41F3969AB00A6107B /* AppDelegate.swift */,
-				958BF4E61F3969AB00A6107B /* ViewController.swift */,
-				958BF4E81F3969AB00A6107B /* Main.storyboard */,
 				958BF4EB1F3969AB00A6107B /* Assets.xcassets */,
-				958BF4ED1F3969AB00A6107B /* LaunchScreen.storyboard */,
+				958BF50C1F396C7300A6107B /* CoreMLModels */,
+				9541C7AE1F396D3C00A0DE37 /* DataModel */,
 				958BF4F01F3969AB00A6107B /* Info.plist */,
+				958BF4ED1F3969AB00A6107B /* LaunchScreen.storyboard */,
+				958BF4E81F3969AB00A6107B /* Main.storyboard */,
+				958BF4E61F3969AB00A6107B /* ViewController.swift */,
 			);
 			path = FirstGame;
 			sourceTree = "<group>";
@@ -94,6 +124,15 @@
 				958BF4FB1F3969AB00A6107B /* Info.plist */,
 			);
 			path = FirstGameTests;
+			sourceTree = "<group>";
+		};
+		958BF50C1F396C7300A6107B /* CoreMLModels */ = {
+			isa = PBXGroup;
+			children = (
+				958BF50D1F396C7300A6107B /* SqueezeNet.mlmodel */,
+				9541C7B11F396DCD00A0DE37 /* PZImageRecognitionModelHandler.swift */,
+			);
+			path = CoreMLModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +236,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9541C7B21F396DCD00A0DE37 /* PZImageRecognitionModelHandler.swift in Sources */,
+				9541C7B41F39753F00A0DE37 /* PZResource.swift in Sources */,
 				958BF4E71F3969AB00A6107B /* ViewController.swift in Sources */,
+				9541C7B31F39753D00A0DE37 /* PZLabel.swift in Sources */,
+				958BF50F1F396CA300A6107B /* SqueezeNet.mlmodel in Sources */,
+				957BF4101F397BEE00451CB4 /* PZViewController.swift in Sources */,
 				958BF4E51F3969AB00A6107B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
